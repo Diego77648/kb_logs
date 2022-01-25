@@ -450,24 +450,24 @@ Citizen.CreateThread(function()
 		function guzelSendToDiscord(DiscordLog,type,bilgiler,extraInfo)
 				local fields = {{["name"] = "TIPO DE REGISTRO:",["value"] = type}}
 				local kavesdava = GetConvar("sv_hostname","Bulunamadı.")
-				local reklamlar = ("¡Joke Leaks!")
-				local DISCORD_NAME = '¡Joke Leks!'
-				local DISCORD_IMAGE = 'https://cdn.discordapp.com/attachments/876806885184012358/884240271758475305/Capture_2021-08-08-03-52-44.png'
+				local reklamlar = ("")
+				local DISCORD_NAME = ''
+				local DISCORD_IMAGE = ''
 				for k,v in ipairs(logTypes[type]) do
 					table.insert(fields,{["name"] = string.upper(v),["value"] = bilgiler[v]})
 				end
 				local embed = {
 					{
 						["author"] = {
-							["name"] = kavesdava,
-							["url"] = "https://discord.gg/dxHnJb9jNt",
-							["icon_url"] = "https://cdn.discordapp.com/attachments/876806885184012358/884240271758475305/Capture_2021-08-08-03-52-44.png"
+							["name"] = ,
+							["url"] = "",
+							["icon_url"] = ""
 						},
 						["fields"] = fields,
 						["color"] = 65425,
 						["title"] = title,
 						["footer"] = {
-						["text"] = reklamlar,
+						["text"] = ,
 					},}}
 				if extraInfo then
 					embed[1]["thumbnail"] = {["url"] = extraInfo}
